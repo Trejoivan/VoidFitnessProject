@@ -1,0 +1,25 @@
+
+.carousel-indicators .active {
+  background-color: red !important;
+}
+
+.carousel-item {
+  max-height: 59rem;
+  height: 59rem;
+  size-height: 59rem;
+}
+
+.carousel-item-next{
+  transition: transform 0s ease-in-out !important;
+}
+
+.carousel-item-prev{
+    transition: transform 0s ease-in-out !important;
+}
+.carousel-item-left {
+    transform: translateX(-100%) !important;
+}
+.carousel-item-right {
+    transform: translateX(100%) !important;
+}
+

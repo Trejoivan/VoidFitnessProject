@@ -1,0 +1,9 @@
+
+.data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url('https://thezooculture.com/wp-content/uploads/2021/07/damaged_dark_concrete_31_05_diffuse.jpg');
+}
+

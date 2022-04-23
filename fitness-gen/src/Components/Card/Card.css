@@ -1,0 +1,23 @@
+.img{
+  max-width: 15rem !important;
+  max-height: 15rem !important;
+}
+
+.card {
+  max-width: 15rem !important;
+  background-image: url("https://mcdn.wallpapersafari.com/medium/83/45/Ju31Or.jpg") !important;
+  background-repeat: no-repeat;
+  color: white !important;
+}
+
+.button {
+  background-color: black !important;
+  color: white !important;
+}
+
+.button:hover {
+  background-image: url("https://media1.giphy.com/media/JQpH25Y6TrRQwtF0KY/200.gif") !important;
+  background-position: center;
+  color: white !important;
+}
+

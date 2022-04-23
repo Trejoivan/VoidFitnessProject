@@ -1,0 +1,13 @@
+.profile-container {
+  display: flex;
+  height: 94.5vh;
+}
+
+.el1 {
+  width: 15%;
+  background-color:red;
+}
+
+.el2 {
+  width: 80%;
+}
