@@ -1,31 +1,42 @@
 from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 from .serializers import *
+from .views_auth import handle_login, handle_logout
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 # Create your views here.
+
 class WorkoutListViewSet(ModelViewSet):
-  queryset = WorkoutList.objects.all()
   serializer_class = WorkoutListSerializer
+  permission_classes = [IsAuthenticated]
+
+  def perform_create(self, serializers):
+    serializers.save(creator=self.request.user)
+    return super().perform_create(serializers)
+
+  def get_queryset(self):
+    if self.request.user.is_superuser:
+      return WorkoutList.objects.all()
+    return WorkoutList.objects.filter(creator=self.request.user)
 
 
 class WorkoutViewSet(ModelViewSet):
   queryset = Workout.objects.all()
   serializer_class = WorkoutSerializer
+  permission_classes = [AllowAny]
 
-  def create(self, request, *args, **kwargs):
-    try:
-      return super().create(request, *args, **kwargs)
+
+class UserViewSet(ModelViewSet):
+  queryset = User.objects.all()
+  serializer_class = UserSerializer
+
+  def get_permissions(self):
+    permission_classes = [AllowAny]
+    return [permission() for permission in permission_classes]
+
+  # def get_permissions(self):
+  #   if self.request.method == 'POST':
+  #     return (permissions.AllowAny(), )
     
-    except Exception as e:
-      print('/////ERROR IVAN', e)
-      raise(e)
+  #   return (permissions.IsAdminUser(),)
 
-
-
-
-# def create(self, validated_data):
-#         validated_data["password"] = make_password(validated_data["password"])
-#         if "bf_api_id" in validated_data and "bf_api_key" in validated_data:
-#             if validated_data["bf_api_id"] and validated_data["bf_api_key"]:
-#                 validated_data["bf_user"] = True
-#         return super().create(validated_data)

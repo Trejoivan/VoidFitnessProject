@@ -96,6 +96,27 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000" # location of frontend React server
 ]
 
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+# ADDDDDDDDDDDDDDD THIS FOR AUTH#################
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000"
+]
+
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+    ],
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ]
+}
+#############################################
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
