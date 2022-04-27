@@ -1,19 +1,22 @@
-
-import MyCard from '../Components/Card/Card';
 import MyCarousel from '../Components/Carousel/Carousel';
 import StepSection from '../Components/Step/Step';
 import '../App.css';
-import IntroSection from '../Components/Hero/IntroSection';
 
-function App(props) {
+
+import { motion } from 'framer-motion';
+
+function HomePage(props) {
   return (
-        <div className="data">
-          {props.responseData && props.responseData.map(data => {
-            return <MyCard data={data} key={data.id} />
-          }) || <div className='App'><IntroSection /><MyCarousel />
-      <StepSection /></div>}</div>
-      
+    <motion.div className="data"
+    inital={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0, transition: { duration: .7 } }}>
+        <div className='App'>
+          <MyCarousel />
+          <StepSection />
+        </div>
+        </motion.div>
   );
 }
 
-export default App;
+export default HomePage;

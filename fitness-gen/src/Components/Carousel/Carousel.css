@@ -5,21 +5,39 @@
 
 .carousel-item {
   max-height: 59rem;
-  height: 59rem;
-  size-height: 59rem;
+  height: auto;
+  background-color: black
 }
 
 .carousel-item-next{
   transition: transform 0s ease-in-out !important;
+  background-color: black
 }
 
 .carousel-item-prev{
     transition: transform 0s ease-in-out !important;
+    background-color: black
 }
 .carousel-item-left {
     transform: translateX(-100%) !important;
+    background-color: black
 }
 .carousel-item-right {
     transform: translateX(100%) !important;
+    background-color: black
+}
+.carousel-caption {
+  size: 75px;
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
 }
 
+.slide-caption {
+  font-size: 3rem;
+}

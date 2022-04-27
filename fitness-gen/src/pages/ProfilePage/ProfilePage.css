@@ -1,13 +1,86 @@
 .profile-container {
   display: flex;
   height: 94.5vh;
+  justify-items: center;
+  background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JleSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 5rem;
+}
+
+.userName {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .el1 {
+  padding-top: 2rem;
   width: 15%;
-  background-color:red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #0d5e94;
+  background-color: rgba(146, 146, 146, 0.412);
 }
 
 .el2 {
   width: 80%;
+}
+
+text.caption {
+  font-size: 1rem;
+  font-weight: bold;
+  color:#0d5e94;
+  text-decoration: underline;
+}
+
+.scale {
+  fill: #fffdfd;
+  stroke: #000;
+  stroke-width: 0.25px !important;
+}
+
+
+.workoutlist-stats {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.workoutlist-btn{
+  background-color: #0d5e94;
+  border-color: #056cb1;
+  margin-bottom: .2rem;
+  transition-timing-function:ease-in-out;
+  transition: .7s;
+}
+.workoutlist-btn-active {
+  background-color: white;
+  color: #0d5e94;
+  border-color: #056cb1;
+  margin-bottom: .2rem;
+  transition-timing-function: ease-in-out;
+  transition: .7s;
+}
+
+.workoutlist-btn:hover {
+  background-color: white;
+  color: #0d5e94;
+  border-color: #056cb1;
+  margin-bottom: .2rem;
+}
+
+.caption {
+  fill: #0d5e94;
+  font-weight: 400;
+}
+
+.shape {
+  fill-opacity: .3;
+  transition-timing-function: ease-in;
+  transition: 0.8s;
 }

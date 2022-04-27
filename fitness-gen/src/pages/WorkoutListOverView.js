@@ -1,57 +1,62 @@
 import WorkoutListAPI from '../api/WorkoutListAPI';
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import SmallCard from '../Components/Card/SmallCard'
-function WorkoutListOverView(props) {
+import { useParams } from 'react-router-dom';
+import SmallCard from '../Components/Card/SmallCard';
+import { motion } from 'framer-motion';
+import '../App.css';
 
-  const [workoutlist, setWorkoutlist] = useState(null);
+function WorkoutListOverView() {
+
+  const [workoutlist, setWorkoutlist] = useState([]);
   const [workouts, setWorkouts] = useState([]);
 
-
   const params = useParams();
-
   useEffect(() => {
     loadListWorkouts();
   }, [params.id]);
-
-  const loadListWorkouts = async () => {
-    const data = await WorkoutListAPI.getWorkoutList(params.id);
-   
-    setWorkoutlist(data);
-  };
 
   useEffect(() => {
     loadWorkouts();
   }, [workoutlist]);
 
-
   const loadWorkouts = async () => {
-    if (!workoutlist){
-      setWorkouts([])}
-
+    if (!workoutlist) {
+      setWorkouts([]);
+    }
     let newWorkouts = [];
-    console.log(workoutlist.workouts);
-
     for (const workoutId of workoutlist.workouts) {
-    
       newWorkouts.push(await WorkoutListAPI.getWorkout(workoutId));
     }
-
     setWorkouts(newWorkouts);
   };
 
+  const loadListWorkouts = async () => {
+    const data = await WorkoutListAPI.getWorkoutList(params.id);
+    console.log(data);
+    setWorkoutlist(data);
+  };
+
+
+  const removeWorkout = () => {
+    loadListWorkouts();
+  };
+
   const renderWorkoutlistview = () => {
-    return workouts.map((workoutitem, index) => <SmallCard data={workoutitem} key={index} >{workoutitem.name}</SmallCard>);
+    return workouts.map((workoutitem, index) => <SmallCard removeWorkout={removeWorkout} data={workoutitem} key={index} >{workoutitem.workout}</SmallCard>);
   };
 
   return (
-    <>
-      <div>
-        <hr />
-        <h3>Here Shows all the workouts in each list</h3>
-        {renderWorkoutlistview()}
-      </div>
-    </>);
+
+    <motion.div
+      className="resultdata"
+       inital={{opacity: 0, transition: {duration: .7}}}
+       animate={{opacity: 1}}
+       exit={{opacity: 0, transition: {duration: .7} }}
+       >
+      <hr />
+      {renderWorkoutlistview()}
+    </motion.div>
+  );
 }
 
 export default WorkoutListOverView;

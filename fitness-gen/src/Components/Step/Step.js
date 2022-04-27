@@ -38,7 +38,7 @@ function StepSection() {
             Share and Send your planned workouts to friends for them to easily follow along.
           </h3>
           <p className="step-description">
-           With creating a profile, you can send and share your workout plans with friends and even compare with thier plans and yours. Create as many workout plans as you like and customize them to fit your goals!
+            Creat a profile, so you can save and plan your workouts with friends and even compare with thier plans and yours. Use our profile page to manage your target areas!
           </p>
         </div>
         <div className="step-img-box">

@@ -4,6 +4,162 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: url('https://thezooculture.com/wp-content/uploads/2021/07/damaged_dark_concrete_31_05_diffuse.jpg');
+  background-color: #010101;
+}
+.page-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  background: rgb(195, 195, 195);
 }
 
+.pageNumTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(195, 195, 195);
+  font-size: 2rem;
+}
+
+.page-btns {
+  padding: .5rem;
+  border-radius: 1000rem;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+
+.page-btns-active {
+  padding: .5rem;
+  border-radius: 1000rem;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://media1.giphy.com/media/JQpH25Y6TrRQwtF0KY/200.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(242, 242, 242);
+}
+
+
+.page-btns:hover {
+  padding: .5rem;
+  border-radius: 1000rem;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.resultdata{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JleSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  height: 80vh
+}
+
+.datalist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+}
+.title-workoutList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+.new-plan-form {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+.new-plan{
+  color: white;
+  font-size: 1.5rem;
+  margin-right: .8rem;
+
+}
+
+.list-item {
+  width: auto;
+}
+
+select {
+  word-wrap: normal;
+  background-color: black;
+  color: white;
+}
+
+.deletePlan-btn{
+  background-color: #db2828;
+  border-color: #edeff0;
+  margin-bottom: 0.2rem;
+}
+.createPlan-btn{
+  background-color: #2fde1b;
+  border-color: #edeff0;
+  margin-bottom: 0.2rem;
+}
+
+
+
+.grid--7-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 80vh;
+  grid-template-rows: 1fr;
+  background-image: url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JleSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  background-color: #8c2705;
+  font-family: Stencil Std, fantasy;
+  color: rgb(160, 141, 141);
+  margin-bottom: 0rem;
+}
+
+
+.remove-link-dec {
+  text-decoration: none;
+}
+
+.remove-link-dec:hover {
+  text-decoration: none;
+}
+
+.motto-page {
+  height: 90vh;
+  background-image: url("https://i.pinimg.com/originals/d0/33/e7/d033e7d3d1bf9e55f16e97290d3df7a6.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.motto-text {
+  color: white;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px #e93d3d;
+}

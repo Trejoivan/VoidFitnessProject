@@ -1,8 +1,9 @@
 
 import WorkoutListAPI from '../api/WorkoutListAPI'
 import {useState, useEffect} from 'react'
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AddWorkouts from '../Components/AddWorkoutData/AddWorkouts'
+import { motion } from 'framer-motion';
 
 function Workouts(props) {
   // states
@@ -24,16 +25,18 @@ function Workouts(props) {
   }
 
   return (
-    <>
 
-    <div>
+    <motion.div
+       inital={{opacity: 0, transition: {duration: .7}}}
+       animate={{opacity: 1}}
+       exit={{opacity: 0, transition: {duration: .7}}}
+       >
       <hr />
       <AddWorkouts/>
       <h3>Here are the workout lists</h3>
       {renderWorkoutList()}
-
-    </div>
-    </>);
+      </motion.div>
+    );
 }
 
 export default Workouts;

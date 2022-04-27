@@ -3,8 +3,18 @@ import './Carousel.css';
 
 function MyCarousel() {
   return (
-
+  
   <Carousel className='carousel'>
+     <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src="https://wallpaper.dog/large/5450398.jpg"
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3 className="slide-caption">Dare to enter the Void?</h3>
+      </Carousel.Caption>
+    </Carousel.Item>
     <Carousel.Item>
       <img
         className="d-block w-100"
@@ -12,7 +22,7 @@ function MyCarousel() {
         alt="First slide"
       />
       <Carousel.Caption>
-        <h3>Plan You workouts</h3>
+        <h3 className="slide-caption">Plan Your workouts</h3>
         
       </Carousel.Caption>
     </Carousel.Item>
@@ -24,7 +34,7 @@ function MyCarousel() {
       />
 
       <Carousel.Caption>
-        <h3>Share your planned workouts to your friends or the public through our application.</h3>
+        <h3 className="slide-caption">Share your planned workouts to your friends or the public through our application.</h3>
        
       </Carousel.Caption>
     </Carousel.Item>
@@ -35,7 +45,7 @@ function MyCarousel() {
         alt="Third slide"
       />
       <Carousel.Caption>
-        <h3>Get motovational Inspiration throught our "Quick Motivation" feature</h3>
+        <h3 className="slide-caption">Get motovational Inspiration throught our "Quick Motivation" feature</h3>
         <p></p>
       </Carousel.Caption>
     </Carousel.Item>
@@ -47,7 +57,7 @@ function MyCarousel() {
       />
 
       <Carousel.Caption>
-        <h3>Earn A badge by joining our 1000lb club</h3>
+        <h3 className="slide-caption">Earn Those Donuts!</h3>
       </Carousel.Caption>
     </Carousel.Item>
 

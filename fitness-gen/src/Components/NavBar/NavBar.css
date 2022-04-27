@@ -1,14 +1,19 @@
 .nav-bar {
-  background-color: black;
   background-image: url("https://media1.giphy.com/media/JQpH25Y6TrRQwtF0KY/200.gif");
+  background-color: rgba(0, 0, 0, 0.664);
   background-repeat: no-repeat;
   background-position: left;
   font-family: Stencil Std, fantasy;
   color: rgb(185, 185, 185);
-  font-size: 1.2rem
+  font-size: 1.3rem;
 }
+
+/* @media (min-width: 992px){
+
+} */
+
 .nav-bar:hover {
-  font-size: 1.2rem
+  font-size: 1.3rem
 }
 
 .dropdown-items {
@@ -27,11 +32,13 @@
 .navLogo {
   display: block;
   color:#8c8c8c;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   transition: color .15s ease-in-out,
   #8c8c8c .15s ease-in-out,
   #8c8c8c .15s ease-in-out;
   text-decoration: none;
+  position: relative;
+  right: 40px;
 }
 .navLogo:hover { 
   color:#dddcdc;
@@ -40,8 +47,8 @@
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x,.75rem);
-  padding-left:  none !important;
+  padding-right:none ;
+  padding-left:  none ;
   margin-right: auto;
   margin-left: none !important;
 }
@@ -50,4 +57,11 @@
   padding-right: 15px;
   padding-left: 1px !important;
   margin-left: none !important;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: rgba(0, 0, 0, 0.664);
 }
