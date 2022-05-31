@@ -1,12 +1,9 @@
-Welcome to my full-stack application 'Void Fitness"
-
-I created this full-stack application for my final project for Code Platoon , utilizing all the skills I gained withing the 14 weeks of the coding bootcamp.
 
 # Void Fitness
 
 [DEPLOYED LINK](https://strongestlink.herokuapp.com/#/)
 
-A fitness-focused social networking app that will allow users to document and share their fitness journies with friends, track workouts, and share invitations to various types of fitness activities.  Leaderboard support among friend groups and badges will be able to be earned to provide some gamification motivation. (rough draft, feel free to edit)
+I created this full-stack application for my final project for Code Platoon , utilizing all the skills I gained withing the 14 weeks of the coding bootcamp.The idea behind Void is to have a localized application to create, manage, and motivate you throughout your fitness journey!
 
 ## Git Workflow Steps:
 0. (assumes you've already cloned down a local copy and are in the repo directory)
