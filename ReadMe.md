@@ -14,7 +14,7 @@ I created this full-stack application for my final project for Code Platoon , ut
 5. Push your feature branch up to remote with `git push -u origin branchname`, if it doesn't let you do this because you don't have remote changes, run `git fetch` or `git fetch --all` first and try again
 6. There will be a link in the commandline you can click and follow to open a pull request in Github, go ahead and do that
 7. If you need to delete a branch you've pushed up on accident, you can do `git push -d origin branchname` and it will be deleted off of Github.
-
+ 
 ## Local deploy steps:
 1. Clone the repository:
 
