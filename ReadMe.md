@@ -15,7 +15,7 @@ I created this full-stack application for my final project for Code Platoon , ut
 6. There will be a link in the commandline you can click and follow to open a pull request in Github, go ahead and do that
 7. If you need to delete a branch you've pushed up on accident, you can do `git push -d origin branchname` and it will be deleted off of Github.
   
-## Local deploy steps:
+## Local deploy steps: 
 1. Clone the repository:
 
 ```sh
