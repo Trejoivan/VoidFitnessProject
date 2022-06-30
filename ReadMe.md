@@ -1,7 +1,7 @@
 
 # Void Fitness
 
-[DEPLOYED LINK](https://strongestlink.herokuapp.com/#/)
+[DEPLOYED LINK](https://strongestlink.herokuapp.com/#/) 
 
 I created this full-stack application for my final project for Code Platoon , utilizing all the skills I gained withing the 14 weeks of the coding bootcamp.The idea behind Void is to have a localized application to create, manage, and motivate you throughout your fitness journey!
 
