@@ -37,7 +37,6 @@ ___
 ```sh
 $ source .venv/bin/activate
 ```
-
 ___
 
 4. Install dependencies:
