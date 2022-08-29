@@ -22,7 +22,6 @@ I created this full-stack application for my final project for Code Platoon , ut
 $ https://github.com/quebecplatoon/VoidFitnessProject.git
 $ cd gp_gym_social_app
 ```
-
 ___
 
 2. Create virtual environment to install backend dependencies:
